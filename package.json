@@ -1,0 +1,19 @@
+{
+  "name": "undangan-digital-fix",
+  "version": "1.0.0",
+  "description": "Wedding invitation digital website",
+  "scripts": {
+    "build": "echo 'Build completed successfully'",
+    "test": "echo 'No tests configured'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "wedding",
+    "invitation"
+  ],
+  "author": "",
+  "license": "ISC"
+}
