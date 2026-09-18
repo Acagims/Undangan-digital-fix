@@ -1,0 +1,19 @@
+{
+  "name": "undangan-digital-fix",
+  "version": "1.0.0",
+  "description": "Wedding invitation website",
+  "scripts": {
+    "dev": "npx serve dist",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "wedding",
+    "invitation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
