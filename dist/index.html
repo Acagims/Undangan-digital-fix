@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#410013">
+  <meta name="description"
+    content="Dengan bahagia kami mengundang Anda untuk merayakan pernikahan Rassya dan Bunga. Buka undangan, lihat detail acara, dan konfirmasi kehadiran Anda.">
+  <title>Rassya & Bunga — Wedding Invitation</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body class="is-locked">
+  <aside class="desktop-note" aria-hidden="true">
+    <span class="eyebrow">A LITTLE SCRAPBOOK OF US</span>
+    <div class="desktop-title">Two hearts.<br>One good<br><em>story.</em></div>
+    <div class="desktop-rule"></div>
+    <p data-couple>Rassya & Bunga</p>
+    <span class="desktop-date" data-date-short>05 . 10 . 2026</span>
+    <span class="desktop-bottom">THE NEXT CHAPTER STARTS WITH YOU.</span>
+  </aside>
+
+  <div class="invitation-shell">
+    <section class="cover" id="cover" aria-labelledby="cover-title">
+      <span class="eyebrow">THE WEDDING OF</span>
+      <h1 class="script" id="cover-title">You are<br><span>Invited!</span></h1>
+      <div class="photo-wrap"><img class="film-photo" data-cover src="assets/fotobareng3.jpeg"
+          alt="Foto bersama Rassya dan Bunga" width="262" height="346"><span class="tape"
+          aria-hidden="true"></span><span class="sparkle s1" aria-hidden="true">✧</span><span class="sparkle s2"
+          aria-hidden="true">✧</span></div>
+      <h2 class="script couple-title" data-couple>Rassya & Bunga</h2>
+      <p class="date-line" data-date-short>26 . 9 . 2026</p>
+      <p class="guest-label">Kepada yang tersayang,</p>
+      <p class="guest-name" id="guest-name">Bapak / Ibu / Saudara/i</p>
+      <button class="button light" id="open-invitation"><span aria-hidden="true">✉</span> Open Invitation</button>
+      <span class="cover-foot">a day for love, laughter & you.</span>
+    </section>
+
+    <main id="invitation" hidden>
+      <section class="intro wine" id="home">
+        <div class="eyebrow">THIS IS OUR LOVE STORY</div>
+        <h2 class="script">Love on repeat.</h2>
+        <div class="record-player">
+          <div class="record" id="record" aria-hidden="true">
+            <div class="record-label">D & T<br>♥</div>
+          </div>
+          <div class="album paper">
+            <div class="album-top"><span>Love</span><span>♥</span><span>Playlist</span></div><img
+              src="assets/fotobareng3.jpeg" alt="Kenangan kami berdua" width="200" height="160"><span class="song-title"
+              id="song-title">A little love song</span>
+            <div class="player-controls"><button id="restart-song" aria-label="Putar lagu dari awal">↶</button><button
+                id="play-song" aria-label="Putar musik" aria-pressed="false">▶</button><span aria-hidden="true">♡</span>
+            </div>
+            <div class="track">
+              <div id="track-progress"></div>
+            </div>
+          </div>
+        </div>
+        <p class="tiny">press play & stay a little while.</p>
+        <blockquote>“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+          jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih
+          dan sayang.”<cite>QS. Ar-Rum: 21</cite></blockquote>
+      </section>
+
+      <section class="story cream" id="story">
+        <div class="photo-strip" id="story-photos"></div>
+        <h2 class="script underlined">The story began here.</h2>
+        <div class="story-copy" id="story-copy"></div>
+        <p class="hand-note script">and the rest is our favourite story ♡</p>
+      </section>
+
+      <section class="characters wine" id="couple">
+        <div class="eyebrow">TWO PEOPLE, ONE FOREVER</div>
+        <h2 class="script">Main character energy.</h2>
+        <div id="couple-cards"></div>
+      </section>
+
+      <section class="date-section" id="event">
+        <h2 class="script">Save the date.</h2>
+        <div class="calendar-paper paper">
+          <span class="tape" aria-hidden="true"></span>
+          <p class="eyebrow" id="calendar-year">2026</p>
+          <h3 class="calendar-month" id="calendar-month">OKTOBER</h3>
+          <div class="weekdays" aria-hidden="true">
+            <span>SEN</span><span>SEL</span><span>RAB</span><span>KAM</span><span>JUM</span><span>SAB</span><span>MIN</span>
+          </div>
+          <div class="calendar-grid" id="calendar-grid" aria-label="Kalender acara"></div>
+          <p id="full-date" class="event-full-date"></p>
+          <div class="event-time"><strong id="event-label"></strong><strong id="event-time"></strong></div>
+          <h3 id="venue"></h3>
+          <p class="address" id="address"></p>
+          <a id="maps-link" class="button burgundy" target="_blank" rel="noopener noreferrer">⌖ Lihat Lokasi</a>
+          <button id="save-calendar" class="text-button">＋ Simpan ke Kalender</button>
+        </div>
+        <div class="countdown" id="countdown" aria-label="Hitung mundur acara"></div>
+        <div class="dress-code wine">
+          <h3 class="script">Dress code</h3>
+          <p>Mari rayakan hari ini dengan nuansa</p>
+          <div class="color-swatch" id="dress-swatch" aria-hidden="true"></div><strong
+            id="dress-code">WHITE</strong><span aria-hidden="true"> ♡</span>
+        </div>
+      </section>
+
+      <section class="gift cream" id="gift">
+        <h2 class="script underlined">Wedding gift</h2>
+        <p>Kehadiran dan doa baikmu adalah hadiah terindah bagi kami. Jika ingin berbagi tanda kasih untuk perjalanan
+          baru kami, terima kasih dari hati yang paling dalam.</p>
+        <div class="bank-card" id="bank-card" hidden><strong class="bank-name" id="bank-name"></strong>
+          <div class="bank-number-row"><span id="bank-number"></span><button class="button burgundy small"
+              id="copy-bank">Salin</button></div><span class="tiny">Atas nama</span>
+          <p id="bank-holder"></p>
+        </div>
+        <p id="gift-default" class="gift-default script">Your presence is our present. ♡</p>
+        <div id="gift-contact" hidden>
+          <p>Ingin mengirim hadiah? Hubungi kami untuk alamat pengiriman.</p><a id="whatsapp-link" class="oval-link"
+            target="_blank" rel="noopener noreferrer">Hubungi kami<br><span class="tiny">melalui WhatsApp ↗</span></a>
+        </div>
+      </section>
+
+      <section class="rsvp wine" id="rsvp">
+        <div class="eyebrow">A SEAT WITH YOUR NAME ON IT</div>
+        <h2 class="script">Will you be there?</h2>
+        <p>Kami tak sabar merayakannya bersamamu.</p>
+        <p id="rsvp-mode" class="mode-note" role="status">Memeriksa layanan RSVP…</p>
+        <form id="rsvp-form">
+          <fieldset class="attendance">
+            <legend class="sr-only">Konfirmasi kehadiran</legend><label><input type="radio" name="attendance"
+                value="yes" required checked><span><span class="emoji" aria-hidden="true">🥂</span>Akan
+                hadir</span></label><label><input type="radio" name="attendance" value="no" required><span><span
+                  class="emoji" aria-hidden="true">💌</span>Belum bisa hadir</span></label>
+          </fieldset>
+          <div class="form-row"><label>Nama lengkap<input id="rsvp-name" name="name" required maxlength="80"
+                autocomplete="name" placeholder="Nama kamu"></label><label id="guest-count-label">Jumlah tamu<select
+                name="guests" id="guest-count"></select></label></div>
+          <label>Ucapan & doa<textarea name="message" rows="3" maxlength="600"
+              placeholder="Tulis pesan hangat untuk kedua mempelai…"></textarea></label>
+          <label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1"
+              autocomplete="off"></label>
+          <p class="privacy-note">Nama dan ucapan akan tampil di buku tamu. Hindari menulis data pribadi.</p>
+          <button class="button light" id="submit-rsvp" type="submit">Kirim RSVP ↗</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="guest-wall-heading">
+          <h3>With love, from you.</h3><span id="wish-count">0 ucapan</span>
+        </div>
+        <div id="guest-wall">
+          <p class="empty-wall">Halaman ini menunggu cerita baik darimu. ♡</p>
+        </div>
+      </section>
+
+      <section class="gallery cream" id="gallery">
+        <div class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</div>
+        <h2 class="script underlined">Our kind of happy.</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="gallery-caption" id="hashtag"></p>
+      </section>
+
+      <footer class="closing wine">
+        <h2 class="script">See you there!</h2>
+        <div class="photo-wrap"><img class="film-photo" data-cover src="assets/fotobareng3.jpeg" alt="Dimas dan Tania"
+            width="262" height="346"><span class="sparkle s1" aria-hidden="true">✧</span><span class="sparkle s2"
+            aria-hidden="true">✧</span></div>
+        <h3 class="script couple-title" data-couple>Dimas & Tania</h3>
+        <p data-date-short></p>
+        <p class="closing-note">Sampai bertemu di hari bahagia kami.<br>Dengan cinta, selalu.</p><span
+          class="eyebrow">MADE OF LITTLE MOMENTS & A LOT OF LOVE</span>
+      </footer>
+    </main>
+  </div>
+
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Navigasi undangan" hidden><a href="#home"
+      aria-label="Pembuka"><span aria-hidden="true">⌂</span><small>Home</small></a><a href="#couple"
+      aria-label="Mempelai"><span aria-hidden="true">♡</span><small>Couple</small></a><a href="#event"
+      aria-label="Acara"><span aria-hidden="true">▦</span><small>Date</small></a><a href="#rsvp"
+      aria-label="Konfirmasi kehadiran"><span aria-hidden="true">✉</span><small>RSVP</small></a><button
+      id="floating-music" aria-label="Putar musik" aria-pressed="false"><span
+        aria-hidden="true">♫</span><small>Music</small></button></nav>
+  <audio id="audio" loop preload="none"></audio>
+  <dialog id="lightbox" aria-label="Foto galeri"><button class="close-lightbox" aria-label="Tutup foto">×</button><img
+      id="lightbox-image" alt="Foto galeri diperbesar"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript>
+    <div class="noscript">Aktifkan JavaScript untuk membuka undangan ini.</div>
+  </noscript>
+</body>
+
+</html>
