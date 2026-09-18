@@ -1,0 +1,24 @@
+{
+  "name": "undangan-digital-fix",
+  "version": "1.0.0",
+  "description": "Undangan Digital - Wedding Invitation Website",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "npx http-server dist -p 8080 -o",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acagims/Undangan-digital-fix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acagims/Undangan-digital-fix/issues"
+  },
+  "homepage": "https://github.com/Acagims/Undangan-digital-fix#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
