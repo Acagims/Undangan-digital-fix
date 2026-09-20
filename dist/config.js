@@ -40,7 +40,7 @@ window.INVITATION = {
   // Kosongkan gift.account sampai nomor rekening asli siap. Kartu tidak tampil jika kosong.
   gift: { bank: 'Mandiri', account: '1290014275230', holder: 'Rassya Febriano Maklin' },
   // Format internasional: 628xxxxxxxxxx, tanpa + atau spasi. Jangan gunakan nomor contoh.
-  whatsapp: '085722071212',
+  whatsapp: '6285722071212',
   // Jalankan npm start untuk RSVP bersama. Hosting statis: demo lokal / WhatsApp jika dikonfigurasi.
   rsvpEndpoint: 'api/rsvp',
   storageKey: 'rassya-bunga-2026',
